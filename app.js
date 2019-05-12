@@ -4,8 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var monk = require('monk');
-var db = monk('localhost:27017/nodetest1');
+//var monk = require('monk');
+//var db = monk('localhost:27017/nodetest1');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -23,10 +23,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Make our db accesible to our router
-app.use(function(req,res,next){
-    req.db = db;
-    next();
-});
+//app.use(function(req,res,next){
+//    req.db = db;
+//    next();
+//});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
