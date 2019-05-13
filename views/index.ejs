@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="javascripts/logik.js"> </script>
     <style>
         .w3-row-padding img {
             margin-bottom: 12px
@@ -30,36 +32,37 @@
 
 
         <!-- Start view --->
-        <h1 class="w3-jumbo"><span class="w3-hide-small">Velkommen til</span> Matematik-spillet.</h1>
-        <p>Oliver og Josephines bachelorprojekt 2019</p>
+        <div id="startview">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">Velkommen til</span> Matematik-spillet.</h1>
+            <p>Oliver og Josephines bachelorprojekt 2019</p>
 
-        <button class="w3-button w3-light-grey w3-padding-large w3-section"> Start spillet </button>
+            <button id="startbutton"> Start spillet </button>
 
-
+        </div>
         <!-- Start view END --->
 
 
         <!-- First view: SMS + input field --->
-        <div>
+        <div id="firstview" hidden>
             <h2>Første view</h2>
             <img src="images/mobilskabelon1.jpg">
 
 
             <p> Kode for at komme videre: <br>
-                <input type="text">
-                <input type="button" value="Videre">
+                <input type="text" id="firstviewtext">
+                <input type="button" value="Videre" id="firstviewbutton">
             </p>
 
         </div>
         <!-- First view END  --->
 
         <!-- Second view: To do list  --->
-        <div>
+        <div id="secondview" hidden>
             <h2>Andet view</h2>
 
             <div style="font-size:0;">
                 <img src="images/pligtseddel01.jpg">
-                <img src="images/pligtseddel002.jpg">
+                <img src="images/pligtseddel002.jpg" id="secondviewbutton">
                 <img src="images/pligtseddel03.jpg">
 
             </div>
@@ -68,43 +71,41 @@
         <!-- Second view END  --->
 
         <!-- Third view: Sub tasks + input field --->
-        <div>
+        <div id="thirdview" hidden>
             <h2>Tredje view</h2>
             <p> For at komme videre i spillet, skal I bruge denne seddel: </p>
 
             <div style="font-size:0;">
                 <img src="images/underopgave1.jpg">
-                <img src="images/underopgave2.jpg">
-                <img src="images/underopgave3.jpg">
-                <img src="images/underopgave4.jpg">
+                <img src="images/underopgave2.jpg" id="image1">
+                <img src="images/underopgave2_done.jpg" id="image1_done" hidden>
+                <img src="images/underopgave3.jpg" id="image2">
+                <img src="images/underopgave3_done.jpg" id="image2_done" hidden>
+                <img src="images/underopgave4.jpg" id="image3">                
+                <img src="images/underopgave4_done.jpg" id="image3_done" hidden>
             </div>
 
-            <div id="hidden" style="font-size:0;" hidden>
-                <img src="images/underopgave1.jpg">
-                <img src="images/underopgave2_done.jpg">
-                <img src="images/underopgave3_done.jpg">
-                <img src="images/underopgave4_done.jpg">
+            <div id="thirdviewinput" hidden>
+                <p> Kode for at komme videre: <br>
+                    <input type="text" id="thirdviewtext">
+                    <input type="button" value="Videre" id="thirdviewbutton">
+                </p>
             </div>
-
-            <p> Kode for at komme videre: <br>
-                <input type="text">
-                <input type="button" value="Videre">
-            </p>
-
+                
         </div>
 
         <!-- Third view END  --->
 
         <!-- Fourth view: Graf + inputfield  --->
-        <div>
+        <div id="fourthview" hidden>
             <h2>Fjerde view</h2>
             <div>
                 <img src="images/dogfood.png">
             </div>
 
             <p> Hvor mange gram skal hunden have? <br>
-                <input type="number">
-                <input type="button" value="Ok">
+                <input type="number" id="fourthviewinput">
+                <input type="button" value="Ok" id="fourthviewbutton">
             </p>
         </div>
 
@@ -112,7 +113,7 @@
 
         <!-- Fifth view: Changed to do list + code   --->
 
-        <div>
+        <div id="fifthview" hidden>
             <h2>Femte view</h2>
             <p> Tillykke! Første pligt er ordnet - Brug koden for at komme videre</p>
             <div style="font-size:0;">
