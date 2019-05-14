@@ -14,6 +14,15 @@ $(document).ready(function () {
         if (text == "1234") {
             $("#firstview").hide();
             $('#secondview').show();
+        } else {
+            var errortext = $("<div>");
+
+            errortext.text("Godt forsøg - prøv igen :) ").css("color", "green");
+
+            $('#errordiv1').empty();
+            $('#errordiv1').append(errortext);
+
+
         }
     });
 
@@ -26,8 +35,8 @@ $(document).ready(function () {
 
 
     //Logic for thirdview
-    var isClicked1 = false; 
-    var isClicked2 = false; 
+    var isClicked1 = false;
+    var isClicked2 = false;
     var isClicked3 = false;
 
     $('#image1').click(function () {
@@ -53,29 +62,45 @@ $(document).ready(function () {
 
     function allIsChecked() {
         if (isClicked1 && isClicked2 && isClicked3) {
-            $('#thirdviewinput').show(); 
+            $('#thirdviewinput').show();
         }
     }
-    
-    
+
+
     $('#thirdviewbutton').click(function () {
         var text = $('#thirdviewtext').val();
 
         if (text == "1G2A3B") {
             $("#thirdview").hide();
             $('#fourthview').show();
+        } else {
+
+            var errortext = $("<div>");
+
+            errortext.text("Næsten rigtigt - prøv igen :) ").css("color", "green");
+            
+            $('#errordiv2').empty();
+            $('#errordiv2').append(errortext);
+            
         }
     });
-    
+
     //Logic for fourthview
-    $('#fourthviewbutton').click(function() {
+    $('#fourthviewbutton').click(function () {
         var number = $('#fourthviewinput').val();
-        
-        if(number == "250"){
+
+        if (number == "250") {
             $("#fourthview").hide();
             $("#fifthview").show();
+        } else {
+            var errortext = $("<div>");
+            errortext.text("Godt forsøg - prøv igen :) ").css("color", "green");
+
+            $('#errordiv3').empty();
+            $('#errordiv3').append(errortext);
+            
         }
-        
+
     });
-    
+
 });
