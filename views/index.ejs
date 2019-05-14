@@ -34,9 +34,9 @@
         <!-- Start view --->
         <div id="startview">
             <h1 class="w3-jumbo"><span class="w3-hide-small">Velkommen til</span> Matematik-spillet.</h1>
-            
+
             <div id="introtext">
-            <p>Dette er et læringsspil for to spillere. Én spiller skal sidde med sin mobil, den anden skal spille på sin computer. Ved at samarbejde er det spillernes opgave at komme igennem logik-opgaverne.</p>
+                <p>Dette er et læringsspil for to spillere. Én spiller skal sidde med sin mobil, den anden skal spille på sin computer. Ved at samarbejde er det spillernes opgave at komme igennem logik-opgaverne.</p>
             </div>
 
             <button id="startbutton"> Start spillet </button>
@@ -47,12 +47,15 @@
 
         <!-- First view: SMS + input field --->
         <div id="firstview" hidden>
-            <img src="images/mobilskabelon1.jpg">
+            <img src="images/mobilskabelon1.jpg" id="firstviewpic">
 
-            <p> Kode for at komme videre: <br>
-                <input type="text" id="firstviewtext"> <br>
-                <button id="firstviewbutton">Videre </button>
-            </p>
+            <div id="firstviewinput" hidden>
+                <p>
+                    Kode: <br>
+                    <input type="text" id="firstviewtext"> <br>
+                    <button id="firstviewbutton">Videre </button>
+                </p>
+            </div>
             <div id=errordiv1></div>
 
         </div>
@@ -73,7 +76,6 @@
 
         <!-- Third view: Sub tasks + input field --->
         <div id="thirdview" hidden>
-            <p> For at komme videre i spillet, skal I bruge denne seddel: </p>
 
             <div style="font-size:0;">
                 <img src="images/underopgave1.jpg">
@@ -81,18 +83,18 @@
                 <img src="images/underopgave2_done.jpg" id="image1_done" hidden>
                 <img src="images/underopgave3.jpg" id="image2">
                 <img src="images/underopgave3_done.jpg" id="image2_done" hidden>
-                <img src="images/underopgave4.jpg" id="image3">                
+                <img src="images/underopgave4.jpg" id="image3">
                 <img src="images/underopgave4_done.jpg" id="image3_done" hidden>
             </div>
 
             <div id="thirdviewinput" hidden>
-                <p> Kode for at komme videre: <br>
+                <p> Kode: <br>
                     <input type="text" id="thirdviewtext"> <br>
-                    <button id="thirdviewbutton">Videre </button>
+                    <button id="thirdviewbutton">Videre</button>
                 </p>
             </div>
             <div id=errordiv2></div>
-                
+
         </div>
 
         <!-- Third view END  --->
@@ -100,13 +102,15 @@
         <!-- Fourth view: Graf + inputfield  --->
         <div id="fourthview" hidden>
             <div>
-                <img src="images/dogfood.png">
+                <img src="images/dogfood.png" id="fourthviewpic">
             </div>
 
-            <p> Hvor mange gram skal hunden have? <br>
-                <input type="text" id="fourthviewinput"> <br>
-                <button id="fourthviewbutton">Videre</button>
-            </p>
+            <div id="fourthviewinput" hidden>
+                <p>Mængde i gram:
+                    <input type="text" id="fourthviewtext"> <br>
+                    <button id="fourthviewbutton">Videre</button>
+                </p>
+            </div>
             <div id=errordiv3></div>
         </div>
 
@@ -115,13 +119,13 @@
         <!-- Fifth view: Changed to do list + code   --->
 
         <div id="fifthview" hidden>
-            <p> Godt arbejde! Første pligt er ordnet - Brug koden for at komme videre</p>
+            <p> Godt arbejde! Første pligt er fuldført - Brug koden for at komme videre</p>
             <div style="font-size:0;">
                 <img src="images/pligtopgave1_done.jpg">
             </div>
 
             <p> Og husk at bytte plads.</p>
-            
+
 
 
         </div>

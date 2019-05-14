@@ -8,8 +8,14 @@ $(document).ready(function () {
 
 
     //Logic for firstview
+    $("#firstviewpic").click(function(){
+        
+        $("#firstviewinput").show();
+        
+    });
     $('#firstviewbutton').click(function () {
         var text = $('#firstviewtext').val();
+        
 
         if (text == "1234") {
             $("#firstview").hide();
@@ -86,8 +92,11 @@ $(document).ready(function () {
     });
 
     //Logic for fourthview
+    $('#fourthviewpic').click(function(){
+        $('#fourthviewinput').show();
+    });
     $('#fourthviewbutton').click(function () {
-        var number = $('#fourthviewinput').val();
+        var number = $('#fourthviewtext').val();
 
         if (number == "250") {
             $("#fourthview").hide();
