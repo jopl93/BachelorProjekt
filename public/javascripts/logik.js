@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
-    //Logik for start view
+    //Logic for start view
     $("#startbutton").click(function () {
         $("#startview").hide();
         $("#firstview").show();
     });
 
 
-    //Logik for firstview
+    //Logic for firstview
     $('#firstviewbutton').click(function () {
         var text = $('#firstviewtext').val();
 
@@ -18,14 +18,14 @@ $(document).ready(function () {
     });
 
 
-    //Logik for secondview
+    //Logic for secondview
     $('#secondviewbutton').click(function () {
         $("#secondview").hide();
         $("#thirdview").show();
     });
 
 
-    //Logik for thirdview
+    //Logic for thirdview
     var isClicked1 = false; 
     var isClicked2 = false; 
     var isClicked3 = false;
@@ -66,4 +66,16 @@ $(document).ready(function () {
             $('#fourthview').show();
         }
     });
+    
+    //Logic for fourthview
+    $('#fourthviewbutton').click(function() {
+        var number = $('#fourthviewinput').val();
+        
+        if(number == "250"){
+            $("#fourthview").hide();
+            $("#fifthview").show();
+        }
+        
+    });
+    
 });
