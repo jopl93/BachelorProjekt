@@ -34,7 +34,10 @@
         <!-- Start view --->
         <div id="startview">
             <h1 class="w3-jumbo"><span class="w3-hide-small">Velkommen til</span> Matematik-spillet.</h1>
-            <p>Oliver og Josephines bachelorprojekt 2019</p>
+            
+            <div id="introtext">
+            <p>Dette er et læringsspil for to spillere. Én spiller skal sidde med sin mobil, den anden skal spille på sin computer. Ved at samarbejde er det spillernes opgave at komme igennem logik-opgaverne.</p>
+            </div>
 
             <button id="startbutton"> Start spillet </button>
 
@@ -44,13 +47,11 @@
 
         <!-- First view: SMS + input field --->
         <div id="firstview" hidden>
-            <h2>Første view</h2>
             <img src="images/mobilskabelon1.jpg">
 
-
             <p> Kode for at komme videre: <br>
-                <input type="text" id="firstviewtext">
-                <input type="button" value="Videre" id="firstviewbutton">
+                <input type="text" id="firstviewtext"> <br>
+                <button id="firstviewbutton">Videre </button>
             </p>
 
         </div>
@@ -58,7 +59,6 @@
 
         <!-- Second view: To do list  --->
         <div id="secondview" hidden>
-            <h2>Andet view</h2>
 
             <div style="font-size:0;">
                 <img src="images/pligtseddel01.jpg">
@@ -72,7 +72,6 @@
 
         <!-- Third view: Sub tasks + input field --->
         <div id="thirdview" hidden>
-            <h2>Tredje view</h2>
             <p> For at komme videre i spillet, skal I bruge denne seddel: </p>
 
             <div style="font-size:0;">
@@ -87,8 +86,8 @@
 
             <div id="thirdviewinput" hidden>
                 <p> Kode for at komme videre: <br>
-                    <input type="text" id="thirdviewtext">
-                    <input type="button" value="Videre" id="thirdviewbutton">
+                    <input type="text" id="thirdviewtext"> <br>
+                    <button id="thirdviewbutton">Videre </button>
                 </p>
             </div>
                 
@@ -98,14 +97,13 @@
 
         <!-- Fourth view: Graf + inputfield  --->
         <div id="fourthview" hidden>
-            <h2>Fjerde view</h2>
             <div>
                 <img src="images/dogfood.png">
             </div>
 
             <p> Hvor mange gram skal hunden have? <br>
-                <input type="number" id="fourthviewinput">
-                <input type="button" value="Ok" id="fourthviewbutton">
+                <input type="text" id="fourthviewinput"> <br>
+                <button id="fourthviewbutton">Videre</button>
             </p>
         </div>
 
@@ -114,7 +112,6 @@
         <!-- Fifth view: Changed to do list + code   --->
 
         <div id="fifthview" hidden>
-            <h2>Femte view</h2>
             <p> Godt arbejde! Første pligt er ordnet - Brug koden for at komme videre</p>
             <div style="font-size:0;">
                 <img src="images/pligtopgave1_done.jpg">
