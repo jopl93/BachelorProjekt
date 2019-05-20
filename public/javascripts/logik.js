@@ -4,6 +4,8 @@ $(document).ready(function () {
     $("#startbutton").click(function () {
         $("#startview").hide();
         $("#firstview").show();
+        $('#sms_sound')[0].play();
+        window.navigator.vibrate(1000);
     });
 
 
