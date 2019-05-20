@@ -11,7 +11,6 @@ $(document).ready(function () {
 
     //Logic for firstview
     $("#firstviewpic").click(function () {
-
         window.navigator.vibrate(1000);
         $("#firstviewinput").show();
 
@@ -82,7 +81,7 @@ $(document).ready(function () {
     }
     $('#thirdviewbutton').click(function () {
         var text = $('#thirdviewtext').val();
-        if (text == "1G2A3B") {
+        if (text == "1D2A3B") {
             $('#good_sound')[0].play();
             $("#thirdview").hide();
             $('#fourthview').show();
