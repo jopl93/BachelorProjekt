@@ -10,15 +10,15 @@ $(document).ready(function () {
 
 
     //Logic for firstview
-    $("#firstviewpic").click(function(){
-        
+    $("#firstviewpic").click(function () {
+
         window.navigator.vibrate(1000);
         $("#firstviewinput").show();
-        
+
     });
     $('#firstviewbutton').click(function () {
         var text = $('#firstviewtext').val();
-        
+
 
         if (text == "1234") {
             $("#firstview").hide();
@@ -93,16 +93,16 @@ $(document).ready(function () {
             var errortext = $("<div>");
 
             errortext.text("Næsten rigtigt - prøv igen :) ").css("color", "green");
-            
+
             $('#errordiv2').empty();
             $('#errordiv2').append(errortext);
-            
+
         }
     });
 
     //Logic for fourthview
-    $('#fourthviewpic').click(function(){
-        
+    $('#fourthviewpic').click(function () {
+
         window.navigator.vibrate(1000);
         $('#fourthviewinput').show();
     });
@@ -113,16 +113,37 @@ $(document).ready(function () {
             $("#fourthview").hide();
             $("#fifthview").show();
             $('#page_turn')[0].play();
-            
+
         } else {
             var errortext = $("<div>");
             errortext.text("Godt forsøg - prøv igen :) ").css("color", "green");
 
             $('#errordiv3').empty();
             $('#errordiv3').append(errortext);
-            
-        }
 
+        }
     });
+
+    $('#fifthview').click(function () {
+        window.navigator.vibrate(1000);
+        $('#fifthviewinput').show();
+    });
+
+    $('#fifthviewbutton').click(function(){
+        var num = $('#fifthviewtext').val();
+        if (num == "BD23") {
+            console.log("clicked");
+            $("#fifthview").hide();
+            $("#sixthview").show();
+        } else {
+            var errortext = $("<div>");
+            errortext.text("Godt forsøg - prøv igen :) ").css("color", "green");
+
+            $('#errordiv4').empty();
+            $('#errordiv4').append(errortext);
+
+        }
+    });
+
 
 });

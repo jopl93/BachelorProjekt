@@ -66,7 +66,7 @@
 
         <!-- Second view: To do list  --->
         <div id="secondview" hidden>
-            
+
             <audio id="page_turn">
                 <source src="sounds/page_turn.mp3" type="audio/mpeg">
             </audio>
@@ -113,10 +113,9 @@
             </div>
 
             <div id="fourthviewinput" hidden>
-                <p>Mængde i gram:
-                    <input type="text" id="fourthviewtext"> <br>
-                    <button id="fourthviewbutton">Videre</button>
-                </p>
+                <p>Mængde i gram:</p>
+                <input type="text" id="fourthviewtext"> <br>
+                <button id="fourthviewbutton">Videre</button>
             </div>
             <div id=errordiv3></div>
         </div>
@@ -126,26 +125,33 @@
         <!-- Fifth view: Changed to do list + code   --->
 
         <div id="fifthview" hidden>
-            <p> Godt arbejde! Første pligt er fuldført - Brug koden for at komme videre</p>
             <div style="font-size:0;">
-                <img src="images/pligtopgave1_done.jpg">
+                <img src="images/pligtopgave1_done.jpg" id="done1">
             </div>
-
-            <p> Og husk at bytte plads.</p>
-
-
+            <div id="fifthviewinput" hidden>
+                <p>Kode: </p>
+                <input type="text" id="fifthviewtext"> <br>
+                <button id="fifthviewbutton">Videre</button>
+            </div>
+            
+            <div id=errordiv4></div>
 
         </div>
-
         <!-- Fifth view END  --->
 
         <!-- Sixth view  --->
 
+        <div id="sixthview" hidden>
+            <p> Godt arbejde! <br>Første pligt er fuldført.</p>
+
+            <p>I har bevist, at I kan løse logiske opgaver i fællesskab :-)</p>
+
+        </div>
 
         <!-- Sixth view END  --->
 
         <!-- END PAGE CONTENT -->
-    </div>
+
 
 </body>
 
