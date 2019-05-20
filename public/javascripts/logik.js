@@ -12,6 +12,7 @@ $(document).ready(function () {
     //Logic for firstview
     $("#firstviewpic").click(function(){
         
+        window.navigator.vibrate(1000);
         $("#firstviewinput").show();
         
     });
@@ -39,6 +40,7 @@ $(document).ready(function () {
     $('#secondviewbutton').click(function () {
         $("#secondview").hide();
         $("#thirdview").show();
+        $('#page_turn')[0].play();
     });
 
 
@@ -73,7 +75,9 @@ $(document).ready(function () {
 
     function allIsChecked() {
         if (isClicked1 && isClicked2 && isClicked3) {
+            window.navigator.vibrate(1000);
             $('#thirdviewinput').show();
+            $('#page_turn')[0].play();
         }
     }
 
@@ -98,6 +102,8 @@ $(document).ready(function () {
 
     //Logic for fourthview
     $('#fourthviewpic').click(function(){
+        
+        window.navigator.vibrate(1000);
         $('#fourthviewinput').show();
     });
     $('#fourthviewbutton').click(function () {
@@ -106,6 +112,8 @@ $(document).ready(function () {
         if (number == "250") {
             $("#fourthview").hide();
             $("#fifthview").show();
+            $('#page_turn')[0].play();
+            
         } else {
             var errortext = $("<div>");
             errortext.text("Godt forsøg - prøv igen :) ").css("color", "green");

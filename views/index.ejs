@@ -66,12 +66,15 @@
 
         <!-- Second view: To do list  --->
         <div id="secondview" hidden>
+            
+            <audio id="page_turn">
+                <source src="sounds/page_turn.mp3" type="audio/mpeg">
+            </audio>
 
-            <div style="font-size:0;">
-                <img src="images/pligtseddel01.jpg">
-                <img src="images/pligtseddel002.jpg" id="secondviewbutton">
-                <img src="images/pligtseddel03.jpg">
-
+            <div>
+                <img class="floats" src="images/pligtseddel01.jpg">
+                <img class="floats" src="images/pligtseddel002.jpg" id="secondviewbutton">
+                <img class="floats" src="images/pligtseddel03.jpg">
             </div>
 
         </div>
@@ -79,19 +82,18 @@
 
         <!-- Third view: Sub tasks + input field --->
         <div id="thirdview" hidden>
-
-            <div style="font-size:0;">
-                <img src="images/underopgave1.jpg">
-                <img src="images/underopgave2.jpg" id="image1">
-                <img src="images/underopgave2_done.jpg" id="image1_done" hidden>
-                <img src="images/underopgave3.jpg" id="image2">
-                <img src="images/underopgave3_done.jpg" id="image2_done" hidden>
-                <img src="images/underopgave4.jpg" id="image3">
-                <img src="images/underopgave4_done.jpg" id="image3_done" hidden>
-            </div>
             <audio id="pen_sound">
                 <source src="sounds/pen_stroke.mp3" type="audio/mpeg">
             </audio>
+            <div style="font-size:0;">
+                <img class="floats" src="images/underopgave1.jpg">
+                <img class="floats" src="images/underopgave2.jpg" id="image1">
+                <img class="floats" src="images/underopgave2_done.jpg" id="image1_done" hidden>
+                <img class="floats" src="images/underopgave3.jpg" id="image2">
+                <img class="floats" src="images/underopgave3_done.jpg" id="image2_done" hidden>
+                <img class="floats" src="images/underopgave4.jpg" id="image3">
+                <img class="floats" src="images/underopgave4_done.jpg" id="image3_done" hidden>
+            </div>
             <div id="thirdviewinput" hidden>
                 <p> Kode: <br>
                     <input type="text" id="thirdviewtext"> <br>
