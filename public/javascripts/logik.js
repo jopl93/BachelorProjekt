@@ -50,6 +50,7 @@ $(document).ready(function () {
     $('#image1').click(function () {
         $('#image1').hide();
         $('#image1_done').show();
+        $('#pen_sound')[0].play();
         isClicked1 = true;
         allIsChecked();
     });
@@ -57,6 +58,7 @@ $(document).ready(function () {
     $('#image2').click(function () {
         $('#image2').hide();
         $('#image2_done').show();
+        $('#pen_sound')[0].play();
         isClicked2 = true;
         allIsChecked();
     });
@@ -64,6 +66,7 @@ $(document).ready(function () {
     $('#image3').click(function () {
         $('#image3').hide();
         $('#image3_done').show();
+        $('#pen_sound')[0].play();
         isClicked3 = true;
         allIsChecked();
     });
