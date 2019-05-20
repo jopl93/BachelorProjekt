@@ -21,6 +21,7 @@ $(document).ready(function () {
 
 
         if (text == "1234") {
+            $('#good_sound')[0].play();
             $("#firstview").hide();
             $('#secondview').show();
         } else {
@@ -77,17 +78,15 @@ $(document).ready(function () {
         if (isClicked1 && isClicked2 && isClicked3) {
             window.navigator.vibrate(1000);
             $('#thirdviewinput').show();
-            $('#page_turn')[0].play();
         }
     }
-
-
     $('#thirdviewbutton').click(function () {
         var text = $('#thirdviewtext').val();
-
         if (text == "1G2A3B") {
+            $('#good_sound')[0].play();
             $("#thirdview").hide();
             $('#fourthview').show();
+            //$('#page_turn')[0].play();
         } else {
 
             var errortext = $("<div>");
@@ -112,7 +111,7 @@ $(document).ready(function () {
         if (number == "250") {
             $("#fourthview").hide();
             $("#fifthview").show();
-            $('#page_turn')[0].play();
+            $('#good_sound')[0].play();
 
         } else {
             var errortext = $("<div>");
@@ -132,7 +131,7 @@ $(document).ready(function () {
     $('#fifthviewbutton').click(function(){
         var num = $('#fifthviewtext').val();
         if (num == "BD23") {
-            console.log("clicked");
+            $("#good_sound")[0].play();
             $("#fifthview").hide();
             $("#sixthview").show();
         } else {
