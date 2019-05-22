@@ -39,6 +39,19 @@ button {
     margin-top: 20vh; 
 }
 
+
+/*INTROVIEW B*/
+#introviewB {
+    text-align: center;
+}
+
+#introviewB div p, #introviewB button {
+    margin-top: 10vh; 
+}
+
+
+
+
 /*
 
 p,
