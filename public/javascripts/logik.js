@@ -33,7 +33,7 @@ $(document).ready(function () {
         var text = $('#firstviewtext').val();
 
 
-        if (text == "1234") {
+        if (text.trim() == "1234" ) {
             $('#good_sound')[0].play();
             $("#firstview").hide();
             $('#secondview').show();
@@ -95,7 +95,7 @@ $(document).ready(function () {
     }
     $('#thirdviewbutton').click(function () {
         var text = $('#thirdviewtext').val();
-        if (text == "1D2A3B") {
+        if (text.toUpperCase().trim() == "1D2A3B") {
             $('#good_sound')[0].play();
             $("#thirdview").hide();
             $('#fourthview').show();
@@ -121,7 +121,7 @@ $(document).ready(function () {
     $('#fourthviewbutton').click(function () {
         var number = $('#fourthviewtext').val();
 
-        if (number == "250") {
+        if (number.trim() == "250") {
             $("#fourthview").hide();
             $("#fifthview").show();
             $('#good_sound')[0].play();
@@ -143,7 +143,7 @@ $(document).ready(function () {
 
     $('#fifthviewbutton').click(function () {
         var num = $('#fifthviewtext').val();
-        if (num == "BD23") {
+        if (num.toUpperCase().trim() == "BD23") {
             $("#good_sound")[0].play();
             $("#fifthview").hide();
             $("#sixthview").show();

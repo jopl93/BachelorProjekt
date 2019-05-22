@@ -22,10 +22,10 @@
         <h1>Velkommen til Matematik-spillet.</h1>
 
         <div id="introtext">
-            <p>Dette er et læringsspil for to spillere. Én spiller skal sidde med sin mobil, den anden skal spille på sin computer. Personen med mobilen skal trykke sig frem og fortælle sin medspiller, hvad der er på skærmen. Ved at samarbejde er det spillernes opgave at komme igennem logik-opgaverne. </p>
+            Dette er et læringsspil for to spillere. <br> Én spiller skal sidde med sin mobil, den anden skal spille på sin computer. Personen med mobilen skal trykke sig frem og fortælle sin medspiller, hvad der er på skærmen. Ved at samarbejde er det spillernes opgave at komme igennem logik-opgaverne.
         </div>
 
-        <button id="startbutton"> Start spillet </button>
+        <button id="startbutton">Start spillet</button>
 
     </div>
     <!-- Start view END --->
@@ -33,54 +33,51 @@
     <!-- Intro view A -->
 
     <div id="introviewA" hidden>
-        <h2> For at hjælpe din medspiller skal du huske: </h2>
-        <div introtexta>
-
+        <h2> For at hjælpe din medspiller skal du huske:</h2>
+        <div>
             <ul>
                 <li>At læse højt for din medspiller, når der står noget på din skærm.</li>
                 <li>At klikke på billederne på skærmen.</li>
                 <li>At scrolle ned på siden, for at kunne se det hele</li>
             </ul>
-            <p>
-                Er I klar...?<br>
-            </p>
         </div>
-        <button id="introabutton">Videre </button>
+        <div>Er I klar...?</div>
+        
+        <button id="introabutton">Videre</button>
     </div>
-
     <!-- Intro view A END -->
+    
     <!-- Intro view B -->
 
     <div id="introviewB" hidden>
         <div id="introtextb">
-            <p>
-                I er lige kommet hjem fra skole... </p>
-            <p>
-                Koden til den digitale lås på hoveddøren er <br>
-                <b>2468</b>.
-            </p>
+            I er lige kommet hjem fra skole...<br>
+            Koden til den digitale lås på hoveddøren er:<br>
         </div>
+        <div><b>2468</b></div>
 
-        <button id="introbbutton">Videre </button>
+        <button id="introbbutton">Videre</button>
 
     </div>
-
     <!-- Intro view B END-->
 
+    
     <!-- First view: SMS + input field --->
     <div id="firstview" hidden>
-        <img src="images/mobilskabelon1.jpg" id="firstviewpic">
+        <div>
+            <img src="images/mobilskabelon1.jpg" id="firstviewpic">
+        </div>
+        
         <audio id="sms_sound">
             <source src="sounds/standard_iphone.mp3" type="audio/mpeg">
         </audio>
 
         <div id="firstviewinput" hidden>
-            <p>
-                Kode: <br>
-                <input type="text" id="firstviewtext"> <br>
-                <button id="firstviewbutton">Videre </button>
-            </p>
+            Kode:<br>
+            <input type="text" id="firstviewtext"><br>
+            <button id="firstviewbutton">Videre</button>
         </div>
+        
         <audio id="good_sound">
             <source src="sounds/positive_sound.mp4" type="audio/mpeg">
         </audio>
@@ -110,6 +107,7 @@
         <audio id="pen_sound">
             <source src="sounds/pen_stroke.mp3" type="audio/mpeg">
         </audio>
+        
         <div style="font-size:0;">
             <img class="floats" src="images/underopgave1.jpg">
             <img class="floats" src="images/underopgave2.jpg" id="image1">
@@ -119,11 +117,11 @@
             <img class="floats" src="images/underopgave4.jpg" id="image3">
             <img class="floats" src="images/underopgave4_done.jpg" id="image3_done" hidden>
         </div>
+        
         <div id="thirdviewinput" hidden>
-            <p> Kode: <br>
-                <input type="text" id="thirdviewtext"> <br>
-                <button id="thirdviewbutton">Videre</button>
-            </p>
+            Kode:<br>
+            <input type="text" id="thirdviewtext"><br>
+            <button id="thirdviewbutton">Videre</button>
         </div>
         <div id=errordiv2></div>
 
@@ -138,8 +136,7 @@
         </div>
 
         <div id="fourthviewinput" hidden>
-            <p>Mængde i gram:</p>
-            <input type="text" id="fourthviewtext"> <br>
+            Mængde i gram:<input type="text" id="fourthviewtext"><br>
             <button id="fourthviewbutton">Videre</button>
         </div>
         <div id=errordiv3></div>
@@ -153,9 +150,10 @@
         <div style="font-size:0;">
             <img src="images/pligtopgave1_done.jpg" id="done1">
         </div>
+        
         <div id="fifthviewinput" hidden>
-            <p>Kode: </p>
-            <input type="text" id="fifthviewtext"> <br>
+            Kode:<br>
+            <input type="text" id="fifthviewtext"><br>
             <button id="fifthviewbutton">Videre</button>
         </div>
 
@@ -167,16 +165,16 @@
     <!-- Sixth view  --->
 
     <div id="sixthview" hidden>
-        <p> Godt arbejde! <br>Første pligt er fuldført.</p>
+        <div>Godt arbejde! <br>Første pligt er fuldført.</div>
 
-        <p>I har bevist, at I kan løse logiske opgaver i fællesskab :-)</p>
+        <div>I har bevist, at I kan løse logiske opgaver i fællesskab :-)</div>
 
         <!-- </div> -->
 
         <!-- Sixth view END  --->
 
         <!-- END PAGE CONTENT -->
-
+    </div>
 
 </body>
 
