@@ -3,11 +3,25 @@ $(document).ready(function () {
     //Logic for start view
     $("#startbutton").click(function () {
         $("#startview").hide();
+        $("#introviewA").show();
+       // $('#sms_sound')[0].play();
+        window.navigator.vibrate(1000);
+    });
+
+    //Logic for introViewA
+    $('#introabutton').click(function () {
+        $("#introviewA").hide();
+        $("#introviewB").show();
+    });
+
+    //Logic for introViewB
+
+    $('#introbbutton').click(function () {
+        $('introviewB').hide();
         $("#firstview").show();
         $('#sms_sound')[0].play();
         window.navigator.vibrate(1000);
     });
-
 
     //Logic for firstview
     $("#firstviewpic").click(function () {
@@ -127,7 +141,7 @@ $(document).ready(function () {
         $('#fifthviewinput').show();
     });
 
-    $('#fifthviewbutton').click(function(){
+    $('#fifthviewbutton').click(function () {
         var num = $('#fifthviewtext').val();
         if (num == "BD23") {
             $("#good_sound")[0].play();
