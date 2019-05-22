@@ -17,157 +17,163 @@
     <!--<div id="main">-->
 
 
-        <!-- Start view --->
-        <div id="startview">
-            <h1>Velkommen til</span> Matematik-spillet.</h1>
+    <!-- Start view --->
+    <div id="startview">
+        <h1>Velkommen til</span> Matematik-spillet.</h1>
 
-            <div id="introtext">
-                <p>Dette er et læringsspil for to spillere. Én spiller skal sidde med sin mobil, den anden skal spille på sin computer. Personen med mobilen skal trykke sig frem og fortælle sin medspiller, hvad der er på skærmen. Ved at samarbejde er det spillernes opgave at komme igennem logik-opgaverne. </p>
-            </div>
-
-            <button id="startbutton"> Start spillet </button>
-
+        <div id="introtext">
+            <p>Dette er et læringsspil for to spillere. Én spiller skal sidde med sin mobil, den anden skal spille på sin computer. Personen med mobilen skal trykke sig frem og fortælle sin medspiller, hvad der er på skærmen. Ved at samarbejde er det spillernes opgave at komme igennem logik-opgaverne. </p>
         </div>
-        <!-- Start view END --->
 
-        <!-- Intro view A -->
+        <button id="startbutton"> Start spillet </button>
 
-        <div id="introviewA" hidden>
+    </div>
+    <!-- Start view END --->
 
-            <h3> For at hjælpe din medspiller skal du huske: </h3>
+    <!-- Intro view A -->
+
+    <div id="introviewA" hidden>
+        <h3> For at hjælpe din medspiller skal du huske: </h3>
+    
+
+        <div>
             <p>
                 <ul>
                     <li>At læse højt for din medspiller, når der står noget på din skærm.</li>
                     <li>At klikke på billederne på skærmen.</li>
                     <li>At scrolle ned på siden, for at kunne se det hele</li>
                 </ul>
-            
-            Er I klar...?<br>
-            <button id="introabutton">Videre </button>
-            </p>
 
+                Er I klar...?<br>
         </div>
+        <button id="introabutton">Videre </button>
+        </p>
 
-        <!-- Intro view A END -->
-        <!-- Intro view B -->
-    
+    </div>
+
+    <!-- Intro view A END -->
+    <!-- Intro view B -->
+
     <div id="introviewB" hidden>
+<div>
+        <p>
+            I er lige kommet hjem fra skole... <br>
+            Koden til den digitale lås på hoveddøren er <br>
+            <b>2468</b>.
+        </p>
+    </div>
+        
+        <button id="introbbutton">Videre </button>
 
+    </div>
+
+    <!-- Intro view B END-->
+
+    <!-- First view: SMS + input field --->
+    <div id="firstview" hidden>
+        <img src="images/mobilskabelon1.jpg" id="firstviewpic">
+        <audio id="sms_sound">
+            <source src="sounds/standard_iphone.mp3" type="audio/mpeg">
+        </audio>
+
+        <div id="firstviewinput" hidden>
             <p>
-            I er lige kommet hjem fra skole... Koden til den digitale lås på hoveddøren er <b>2468</b>.  
-                
-                <button id="introbbutton">Videre </button>
+                Kode: <br>
+                <input type="text" id="firstviewtext"> <br>
+                <button id="firstviewbutton">Videre </button>
             </p>
+        </div>
+        <audio id="good_sound">
+            <source src="sounds/positive_sound.mp4" type="audio/mpeg">
+        </audio>
+        <div id=errordiv1></div>
 
+    </div>
+    <!-- First view END  --->
+
+    <!-- Second view: To do list  --->
+    <div id="secondview" hidden>
+
+        <audio id="page_turn">
+            <source src="sounds/page_turn.mp3" type="audio/mpeg">
+        </audio>
+
+        <div>
+            <img class="floats" src="images/pligtseddel01.jpg">
+            <img class="floats" src="images/pligtseddel002.jpg" id="secondviewbutton">
+            <img class="floats" src="images/pligtseddel03.jpg">
         </div>
 
-        <!-- Intro view B END-->
+    </div>
+    <!-- Second view END  --->
 
-        <!-- First view: SMS + input field --->
-        <div id="firstview" hidden>
-            <img src="images/mobilskabelon1.jpg" id="firstviewpic">
-            <audio id="sms_sound">
-                <source src="sounds/standard_iphone.mp3" type="audio/mpeg">
-            </audio>
-
-            <div id="firstviewinput" hidden>
-                <p>
-                    Kode: <br>
-                    <input type="text" id="firstviewtext"> <br>
-                    <button id="firstviewbutton">Videre </button>
-                </p>
-            </div>
-            <audio id="good_sound">
-                <source src="sounds/positive_sound.mp4" type="audio/mpeg">
-            </audio>
-            <div id=errordiv1></div>
-
+    <!-- Third view: Sub tasks + input field --->
+    <div id="thirdview" hidden>
+        <audio id="pen_sound">
+            <source src="sounds/pen_stroke.mp3" type="audio/mpeg">
+        </audio>
+        <div style="font-size:0;">
+            <img class="floats" src="images/underopgave1.jpg">
+            <img class="floats" src="images/underopgave2.jpg" id="image1">
+            <img class="floats" src="images/underopgave2_done.jpg" id="image1_done" hidden>
+            <img class="floats" src="images/underopgave3.jpg" id="image2">
+            <img class="floats" src="images/underopgave3_done.jpg" id="image2_done" hidden>
+            <img class="floats" src="images/underopgave4.jpg" id="image3">
+            <img class="floats" src="images/underopgave4_done.jpg" id="image3_done" hidden>
         </div>
-        <!-- First view END  --->
-
-        <!-- Second view: To do list  --->
-        <div id="secondview" hidden>
-
-            <audio id="page_turn">
-                <source src="sounds/page_turn.mp3" type="audio/mpeg">
-            </audio>
-
-            <div>
-                <img class="floats" src="images/pligtseddel01.jpg">
-                <img class="floats" src="images/pligtseddel002.jpg" id="secondviewbutton">
-                <img class="floats" src="images/pligtseddel03.jpg">
-            </div>
-
+        <div id="thirdviewinput" hidden>
+            <p> Kode: <br>
+                <input type="text" id="thirdviewtext"> <br>
+                <button id="thirdviewbutton">Videre</button>
+            </p>
         </div>
-        <!-- Second view END  --->
+        <div id=errordiv2></div>
 
-        <!-- Third view: Sub tasks + input field --->
-        <div id="thirdview" hidden>
-            <audio id="pen_sound">
-                <source src="sounds/pen_stroke.mp3" type="audio/mpeg">
-            </audio>
-            <div style="font-size:0;">
-                <img class="floats" src="images/underopgave1.jpg">
-                <img class="floats" src="images/underopgave2.jpg" id="image1">
-                <img class="floats" src="images/underopgave2_done.jpg" id="image1_done" hidden>
-                <img class="floats" src="images/underopgave3.jpg" id="image2">
-                <img class="floats" src="images/underopgave3_done.jpg" id="image2_done" hidden>
-                <img class="floats" src="images/underopgave4.jpg" id="image3">
-                <img class="floats" src="images/underopgave4_done.jpg" id="image3_done" hidden>
-            </div>
-            <div id="thirdviewinput" hidden>
-                <p> Kode: <br>
-                    <input type="text" id="thirdviewtext"> <br>
-                    <button id="thirdviewbutton">Videre</button>
-                </p>
-            </div>
-            <div id=errordiv2></div>
+    </div>
 
+    <!-- Third view END  --->
+
+    <!-- Fourth view: Graf + inputfield  --->
+    <div id="fourthview" hidden>
+        <div>
+            <img src="images/dogfood.png" id="fourthviewpic">
         </div>
 
-        <!-- Third view END  --->
+        <div id="fourthviewinput" hidden>
+            <p>Mængde i gram:</p>
+            <input type="text" id="fourthviewtext"> <br>
+            <button id="fourthviewbutton">Videre</button>
+        </div>
+        <div id=errordiv3></div>
+    </div>
 
-        <!-- Fourth view: Graf + inputfield  --->
-        <div id="fourthview" hidden>
-            <div>
-                <img src="images/dogfood.png" id="fourthviewpic">
-            </div>
+    <!-- Fourth view END  --->
 
-            <div id="fourthviewinput" hidden>
-                <p>Mængde i gram:</p>
-                <input type="text" id="fourthviewtext"> <br>
-                <button id="fourthviewbutton">Videre</button>
-            </div>
-            <div id=errordiv3></div>
+    <!-- Fifth view: Changed to do list + code   --->
+
+    <div id="fifthview" hidden>
+        <div style="font-size:0;">
+            <img src="images/pligtopgave1_done.jpg" id="done1">
+        </div>
+        <div id="fifthviewinput" hidden>
+            <p>Kode: </p>
+            <input type="text" id="fifthviewtext"> <br>
+            <button id="fifthviewbutton">Videre</button>
         </div>
 
-        <!-- Fourth view END  --->
+        <div id=errordiv4></div>
 
-        <!-- Fifth view: Changed to do list + code   --->
+    </div>
+    <!-- Fifth view END  --->
 
-        <div id="fifthview" hidden>
-            <div style="font-size:0;">
-                <img src="images/pligtopgave1_done.jpg" id="done1">
-            </div>
-            <div id="fifthviewinput" hidden>
-                <p>Kode: </p>
-                <input type="text" id="fifthviewtext"> <br>
-                <button id="fifthviewbutton">Videre</button>
-            </div>
+    <!-- Sixth view  --->
 
-            <div id=errordiv4></div>
+    <div id="sixthview" hidden>
+        <p> Godt arbejde! <br>Første pligt er fuldført.</p>
 
-        </div>
-        <!-- Fifth view END  --->
+        <p>I har bevist, at I kan løse logiske opgaver i fællesskab :-)</p>
 
-        <!-- Sixth view  --->
-
-        <div id="sixthview" hidden>
-            <p> Godt arbejde! <br>Første pligt er fuldført.</p>
-
-            <p>I har bevist, at I kan løse logiske opgaver i fællesskab :-)</p>
-
-       <!-- </div> -->
+        <!-- </div> -->
 
         <!-- Sixth view END  --->
 
