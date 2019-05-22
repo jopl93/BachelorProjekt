@@ -17,7 +17,7 @@ $(document).ready(function () {
     //Logic for introViewB
 
     $('#introbbutton').click(function () {
-        $('introviewB').hide();
+        $('#introviewB').hide();
         $("#firstview").show();
         $('#sms_sound')[0].play();
         window.navigator.vibrate(1000);

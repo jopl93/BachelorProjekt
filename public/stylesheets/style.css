@@ -15,11 +15,14 @@ h6 {
 }
 
 p {
-    font-size: 25x;
+    font-size: 22px;
 }
-
+html {
+    height: 100%
+}
 body {
     text-align: center;
+    min-height: 100%;
 }
 
 img {
@@ -29,14 +32,29 @@ img {
 
 div {
     margin: 5%;
+    height: 100%;
+}
+
+#main {
+    margin: auto;
+    height: 100%;
 }
 
 #introtext {
 
     margin: auto;
+    width: 80%;
+    height: 100%;
+
+}
+
+#introviewA, #introviewB {
+    
+    margin: auto;
     width: 75%;
     height: 50%;
-
+    top: 25%;
+    font-size: 20px;
 }
 
 button {
