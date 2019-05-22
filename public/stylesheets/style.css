@@ -32,12 +32,17 @@ img {
 
 div {
     margin: 5%;
-    height: 100%;
+    min-height: 100%
 }
 
 #main {
     margin: auto;
     height: 100%;
+}
+
+#startview {
+    
+    
 }
 
 #introtext {
