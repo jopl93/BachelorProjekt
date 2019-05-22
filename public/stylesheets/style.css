@@ -14,12 +14,15 @@ h6 {
     line-height: 150%;
 }
 
-p {
+p,
+li {
     font-size: 22px;
 }
+
 html {
     height: 100%
 }
+
 body {
     text-align: center;
     height: 100%;
@@ -41,10 +44,7 @@ div {
     height: 100%;
 }
 
-#startview {
-    
-    
-}
+#startview {}
 
 #introtext {
 
@@ -54,19 +54,26 @@ div {
 
 }
 
-#introviewA, #introviewB {
-   align-content: center; 
+#introtexta,
+#introtextb {
+    align-content: center;
     margin: auto;
-    width: 90%;
-    height: 50%;
+    height: 100%;
     top: 25%;
-    font-size: 20px;
 }
 
+#introviewA,
 #introviewB {
-    
-    
-    margin-top: 40%;
+
+    height: 100%;
+}
+
+#introviewB,
+#secondview,
+#thirdview {
+    margin-top: 50vh;
+
+
 }
 
 button {
@@ -76,9 +83,15 @@ button {
     border-radius: 12px;
     background-color: white;
     margin: 1%;
-    
+
 }
 
-.floats{
+#introabutton,
+#introbbutton {
+
+    margin-bottom: 20%;
+}
+
+.floats {
     float: left;
 }
