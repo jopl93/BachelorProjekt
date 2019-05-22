@@ -121,7 +121,7 @@ $(document).ready(function () {
     $('#fourthviewbutton').click(function () {
         var number = $('#fourthviewtext').val();
 
-        if (number.trim() == "250") {
+        if (number.trim() == "170") {
             $("#fourthview").hide();
             $("#fifthview").show();
             $('#good_sound')[0].play();
