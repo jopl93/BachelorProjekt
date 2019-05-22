@@ -1,13 +1,10 @@
+/*GENERAL FOR WHOLE PAGE*/
 body {
     background-color: black;
-}
-
-body {
     font-family: sans-serif;
     color: white;
 /*    line-height: 150%;*/
 }
-
 
 button {
     font-family: sans-serif;
@@ -18,12 +15,28 @@ button {
     margin: 1%;
 }
 
+
+/*STARTVIEW*/
 #startview {
     text-align: center;
 }
 
 #startview div, #startview button {
     margin-top: 20vh;
+}
+
+
+/*INTROVIEW A*/
+#introviewA {
+    text-align: center;
+}
+
+#introviewA div ul {
+    text-align: left;
+}
+
+#introviewA div, #introviewA button {
+    margin-top: 20vh; 
 }
 
 /*
