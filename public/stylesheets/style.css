@@ -50,6 +50,38 @@ button {
 }
 
 
+/*FIRSTVIEW*/
+#firstview {
+    text-align: center;
+}
+
+#firstview div img {
+    width: 100%; 
+}
+
+
+/*SECONDVIEW*/
+#secondview div img {
+    width: 100%; 
+    float: left; 
+}
+
+
+/*THIRDVIEW*/
+#thirdview {
+    text-align: center; 
+}
+
+#thirdview div img {
+    width: 100%; 
+    float: left; 
+}
+
+#thirdviewinput {
+    display: inline-block; 
+    margin-top: 5vh; 
+}
+
 
 
 /*
