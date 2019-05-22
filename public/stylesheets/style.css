@@ -22,6 +22,11 @@ button {
     text-align: center;
 }
 
+#startview div {
+    width: 80%; 
+    margin: auto; 
+}
+
 #startview div, #startview button {
     margin-top: 20vh;
 }
@@ -32,8 +37,17 @@ button {
     text-align: center;
 }
 
+#introviewA div {
+    width: 80%; 
+    margin: auto; 
+}
+
 #introviewA div ul {
     text-align: left;
+}
+
+#introviewA div ul li {
+    margin-bottom: 3vh; 
 }
 
 #introviewA div, #introviewA button {
@@ -44,6 +58,11 @@ button {
 /*INTROVIEW B*/
 #introviewB {
     text-align: center;
+}
+
+#introviewB div {
+    width: 80%; 
+    margin: auto; 
 }
 
 #introviewB div p {
