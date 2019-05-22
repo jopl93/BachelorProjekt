@@ -45,8 +45,12 @@ button {
     text-align: center;
 }
 
-#introviewB div p, #introviewB button {
+#introviewB div p {
     margin-top: 5vh; 
+}
+
+#introviewB button {
+    margin-top: 20vh; 
 }
 
 
@@ -73,13 +77,55 @@ button {
 }
 
 #thirdview div img {
-    width: 100%; 
     float: left; 
 }
 
-#thirdviewinput {
-    display: inline-block; 
-    margin-top: 5vh; 
+#thirdview #images {
+    width: 100%; 
+    height: 55vh;
+}
+
+#thirdviewinput { 
+    margin-top: 10vh; 
+}
+
+
+/*FOURTHVIEW*/
+#fourthview {
+    text-align: center;
+}
+
+#fourthview div img {
+    width: 100%; 
+}
+
+#fourthviewinput {
+    margin-top: 20vh; 
+}
+
+
+/*FIFTHVIEW*/
+#fifthview {
+    text-align: center; 
+}
+
+#fifthview div img {
+    width: 100%; 
+    height: 55vh; 
+}
+
+#fifthviewinput {
+    margin-top: 20vh; 
+}
+
+
+/*SIXTHVIEW*/
+#sixthview {
+    text-align: center; 
+}
+
+#sixthview div {
+    margin-top: 20vh; 
 }
 
 
